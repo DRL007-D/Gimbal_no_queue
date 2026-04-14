@@ -1,0 +1,84 @@
+T2C84 000:007.542   SEGGER J-Link V7.96h Log File
+T2C84 000:007.770   DLL Compiled: May 15 2024 15:33:59
+T2C84 000:007.780   Logging started @ 2026-04-05 13:44
+T2C84 000:007.789   Process: E:\keil5\UV4\UV4.exe
+T2C84 000:007.803 - 7.797ms
+T2C84 000:007.820 JLINK_SetWarnOutHandler(...)
+T2C84 000:007.828 - 0.011ms
+T2C84 000:007.846 JLINK_OpenEx(...)
+T2C84 000:009.860   Firmware: J-Link OB-STM32F072-CortexM compiled Jan  7 2019 14:09:37
+T2C84 000:010.733   Firmware: J-Link OB-STM32F072-CortexM compiled Jan  7 2019 14:09:37
+T2C84 000:010.889   Decompressing FW timestamp took 120 us
+T2C84 000:015.300   Hardware: V1.00
+T2C84 000:015.322   S/N: 4294967295
+T2C84 000:015.336   OEM: SEGGER
+T2C84 000:015.348   Feature(s): GDB, RDI, FlashBP, FlashDL, JFlash, RDDI
+T2C84 000:016.182   Bootloader: (Could not read)
+T2C84 000:017.093   TELNET listener socket opened on port 19021
+T2C84 000:017.246   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T2C84 000:017.650   WEBSRV Webserver running on local port 19080
+T2C84 000:017.825   Looking for J-Link GUI Server exe at: E:\keil5\ARM\Segger\JLinkGUIServer.exe
+T2C84 000:018.001   Looking for J-Link GUI Server exe at: C:\Program Files (x86)\SEGGER\JLink_V646c\\JLinkGUIServer.exe
+T2C84 000:324.875   Failed to connect to J-Link GUI Server.
+T2C84 000:324.917 - 317.051ms returns "O.K."
+T2C84 000:324.934 JLINK_GetEmuCaps()
+T2C84 000:324.944 - 0.007ms returns 0xB8EA5A33
+T2C84 000:324.961 JLINK_TIF_GetAvailable(...)
+T2C84 000:325.163 - 0.203ms
+T2C84 000:325.175 JLINK_SetErrorOutHandler(...)
+T2C84 000:325.182 - 0.006ms
+T2C84 000:325.208 JLINK_ExecCommand("ProjectFile = "H:\LIN_QI\Gimbal_no_queue\MDK-ARM\JLinkSettings.ini"", ...). 
+T2C84 000:339.813 - 14.607ms returns 0x00
+T2C84 000:346.635 JLINK_ExecCommand("Device = STM32F103C8", ...). 
+T2C84 000:352.378   Device "STM32F103C8" selected.
+T2C84 000:352.918 - 6.262ms returns 0x00
+T2C84 000:352.942 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T2C84 000:352.955 - 0.002ms returns 0x01
+T2C84 000:352.965 JLINK_GetHardwareVersion()
+T2C84 000:352.974 - 0.008ms returns 10000
+T2C84 000:352.985 JLINK_GetDLLVersion()
+T2C84 000:352.994 - 0.008ms returns 79608
+T2C84 000:353.005 JLINK_GetOEMString(...)
+T2C84 000:353.017 JLINK_GetFirmwareString(...)
+T2C84 000:353.026 - 0.009ms
+T2C84 000:367.231 JLINK_GetDLLVersion()
+T2C84 000:367.253 - 0.022ms returns 79608
+T2C84 000:367.263 JLINK_GetCompileDateTime()
+T2C84 000:367.269 - 0.006ms
+T2C84 000:372.086 JLINK_GetFirmwareString(...)
+T2C84 000:372.109 - 0.023ms
+T2C84 000:377.820 JLINK_GetHardwareVersion()
+T2C84 000:377.847 - 0.027ms returns 10000
+T2C84 000:385.037 JLINK_GetSN()
+T2C84 000:385.056 - 0.018ms returns -1
+T2C84 000:385.064 JLINK_GetOEMString(...)
+T2C84 000:397.543 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T2C84 000:398.455 - 0.911ms returns 0x00
+T2C84 000:398.472 JLINK_HasError()
+T2C84 000:398.493 JLINK_SetSpeed(5000)
+T2C84 000:398.834 - 0.341ms
+T2C84 000:398.848 JLINK_GetId()
+T2C84 000:407.266   InitTarget() start
+T2C84 000:407.292    J-Link Script File: Executing InitTarget()
+T2C84 000:412.380   SWD selected. Executing JTAG -> SWD switching sequence.
+T2C84 000:527.148   Error: Failed to initialized DAP.
+T2C84 000:537.812   Can not attach to CPU. Trying connect under reset.
+T2C84 000:596.813   SWD selected. Executing JTAG -> SWD switching sequence.
+T2C84 000:708.220   Error: Failed to initialized DAP.
+T2C84 000:713.933   Connecting to CPU via connect under reset failed.
+T2C84 000:772.229   InitTarget() end - Took 357ms
+T2C84 000:782.136   Connect failed. Resetting via Reset pin and trying again.
+T2C84 000:856.674   InitTarget() start
+T2C84 000:856.718    J-Link Script File: Executing InitTarget()
+T2C84 000:868.084   SWD selected. Executing JTAG -> SWD switching sequence.
+T2C84 000:978.748   Error: Failed to initialized DAP.
+T2C84 000:989.004   Can not attach to CPU. Trying connect under reset.
+T2C84 001:048.554   SWD selected. Executing JTAG -> SWD switching sequence.
+T2C84 001:161.667   Error: Failed to initialized DAP.
+T2C84 001:170.726   Connecting to CPU via connect under reset failed.
+T2C84 001:229.751   InitTarget() end - Took 364ms
+T2C84 001:229.793 - 830.944ms returns 0x00000000
+T2C84 002:495.533 JLINK_Close()
+T2C84 002:500.291 - 4.757ms
+T2C84 002:500.314   
+T2C84 002:500.323   Closed
