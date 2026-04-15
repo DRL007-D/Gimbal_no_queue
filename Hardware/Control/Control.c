@@ -176,7 +176,7 @@ void K230_Control(void)
 		if(usart_f_count>=1000)//1s内没有识别到目标就旋转搜寻
 		{
 			usart_f_count = 0;
-			Target_Search_360();//云台旋转搜索目标
+			// Target_Search_360();//云台旋转搜索目标
 			led_none_state = ~ led_none_state;//LED慢闪
 			(led_none_state)?(GPIOC -> BSRR = GPIO_PIN_13):(GPIOC -> BSRR = (GPIO_PIN_13<<16));
 			Gimbal_PID_Data.Down_Gimbal_sum = 0;
@@ -185,7 +185,7 @@ void K230_Control(void)
 
     }	
 
-}
+}         
 
 //K230的帧头帧尾固定2C、5B，可以自己简单结合其他功能的识别，比如23年比赛的色块识别
 void K230_Header_Tail_Check(uint8_t* Rx_String_Buffer,size_t  packet_length) // K230包尾检查函数，本版本加入K230胜利信号
@@ -195,7 +195,7 @@ void K230_Header_Tail_Check(uint8_t* Rx_String_Buffer,size_t  packet_length) // 
         USART1_Data.X_uint16_K230 = (uint16_t)(Rx_String_Buffer[1] << 8) | (uint16_t)Rx_String_Buffer[2];//X轴字节组合
         USART1_Data.Y_uint16_K230 = (uint16_t)(Rx_String_Buffer[3] << 8) | (uint16_t)Rx_String_Buffer[4];//Y轴字节组合
         // Ring_Flag_K230 = Rx_String_Buffer[5];
-        // printf("X:%d,Y:%d\r\n",USART1_Data.X_uint16_K230,USART1_Data.Y_uint16_K230);
+        printf("X:%d,Y:%d\r\n",USART1_Data.X_uint16_K230,USART1_Data.Y_uint16_K230);
         // 修正后的代码片段
         if(USART1_Data.X_uint16_K230 || USART1_Data.Y_uint16_K230)
         {
